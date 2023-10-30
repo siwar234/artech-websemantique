@@ -1,0 +1,2325 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh/"
+     xml:base="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:artechh="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/msi/ontologies/2023/9/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#AttendsEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#AttendsEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#CreatesArtwork -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#CreatesArtwork">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsGalleryOwner"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#FavoritedArtwork -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#FavoritedArtwork">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasComments -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasComments"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasPost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasPost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProduct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProductType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProductType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasQuantity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasQuantity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasShippingAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasShippingAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsADeliveryMan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hascategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hascategory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hasname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hasname"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hastitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hastitle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IntoCart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IntoCart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsADeliveryMan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsADeliveryMan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsArtExhibition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsArtExhibition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsEventCategory"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtExhibitionEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsEventCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsEventCategory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsGalleryOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsGalleryOwner">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsOnlineArt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsOnlineArt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsEventCategory"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineArtEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsShipped -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsShipped"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#MadePayment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#MadePayment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PlacesOrder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PlacesOrder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#UnderAPost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#UnderAPost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#WritesReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#WritesReview">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasAttendee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasAttendee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasReview"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventIsOrganizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventIsOrganizedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventIsRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventIsRelatedTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasCategory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasPrice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasReviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasReviews"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasStock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasStock"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasdescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasdescription"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Tel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Tel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#dimension -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#dimension">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#image -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#image">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#medium -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#medium">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#price">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#promotion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#promotion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#quantity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#username -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#username">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtExhibitionEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtExhibitionEvent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsArtExhibition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtExhibitionEvent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineArtEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtistReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtistReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtworkReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtworkReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Authentication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Authentication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProduct"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IntoCart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+	
+	
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product2">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+</owl:NamedIndividual>
+
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ShoppingCart1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+  <artechh:HasProduct rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1"/>
+  <artechh:IntoCart rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1"/>
+</owl:NamedIndividual>
+
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ShoppingCart1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+  <artechh:HasProduct rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product2"/>
+  <artechh:IntoCart rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+  <artechh:HasProduct rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+  <artechh:IntoCart rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1"/>
+</owl:NamedIndividual>
+
+   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order2">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+  <artechh:HasProduct rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product2"/>
+  <artechh:IntoCart rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product2"/>
+</owl:NamedIndividual>
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hastitle"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasdescription"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasPost"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsADeliveryMan"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DigitalArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DigitalArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasAttendee"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasLocation"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasReview"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventIsOrganizedBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventIsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasCategory"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasReviews"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+	<!-- Instance de la classe Category -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ExhibitionEvent"/>
+
+<!-- Instance de la classe Event -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event1">
+    <!-- Relation de l'événement à la catégorie -->
+    <artechh:IsRelatedTo rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ExhibitionEvent"/>
+</owl:NamedIndividual>
+
+<!-- Instance de la classe Category -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineEvent"/>
+
+<!-- Instance de la classe Event -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event2">
+    <!-- Relation de l'événement à la catégorie -->
+    <artechh:IsRelatedTo rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineEvent"/>
+</owl:NamedIndividual>
+
+<!-- Instance de la classe Posts -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post1"/>
+
+<!-- Instance de la classe DeliveryMan -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Saleh">
+    <!-- Relation du DeliveryMan au Post -->
+    <artechh:IsRelatedTo rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post1"/>
+</owl:NamedIndividual>
+
+<!-- Instance de la classe Posts -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#thisismyfirstpost"/>
+
+<!-- Instance de la classe DeliveryMan -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Bilal">
+    <!-- Relation du DeliveryMan au Post -->
+    <artechh:IsRelatedTo rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#thisismyfirstpost"/>
+</owl:NamedIndividual>
+
+<!-- Instance de la classe Posts -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post4"/>
+
+<!-- Instance de la classe DeliveryMan -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Burhan">
+    <!-- Relation du DeliveryMan au Post -->
+    <artechh:IsRelatedTo rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post4"/>
+</owl:NamedIndividual>
+
+<!-- Instance de la classe Posts -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post5"/>
+
+<!-- Instance de la classe DeliveryMan -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Dawoud">
+    <!-- Relation du DeliveryMan au Post -->
+    <artechh:IsRelatedTo rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post5"/>
+</owl:NamedIndividual>
+
+
+
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#EventOrder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#EventOrder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ExpressShipping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ExpressShipping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsGalleryOwner"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Giftcard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Giftcard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#LocalPickup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#LocalPickup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineArtEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineArtEvent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsOnlineArt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineArtEvent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProduct"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Painting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Painting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+		
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Payment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Payment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Photography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Photography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#WritesReview"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasReviews"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review2">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+</owl:NamedIndividual>
+
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductWithMultipleReviews">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+  <artechh:hasReviews rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review1"/>
+  <artechh:hasReviews rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review2"/>
+</owl:NamedIndividual>
+
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+  <artechh:hasReviews rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review1"/>
+</owl:NamedIndividual>
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PreOrder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PreOrder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+    </owl:Class>
+    
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductForPreOrder">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#MyPreOrder1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PreOrder"/>
+  <artechh:HasProduct rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Lady_Lilith_by_Dante_Gabriel_Rossetti"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#MyPreOrder">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PreOrder"/>
+  <artechh:HasProduct rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1"/>
+</owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProductType"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasPrice"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+           <owl:Restriction>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#relatedToReview"/>
+    <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+</owl:Restriction>
+
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasStock"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Promotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Promotion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PurchaseOrder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PurchaseOrder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasReviews"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Sculpture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Sculpture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ShoppingCart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ShoppingCart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#StandardShipping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#StandardShipping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#AttendsEvent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#FavoritedArtwork"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#FavoritedArtwork"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasShippingAddress"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsADeliveryMan"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#WritesReview"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#MadePayment"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PlacesOrder"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#UserProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#UserProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Wishlist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Wishlist"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Advanced_Art_Events -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Advanced_Art_Events">
+	 <!-- Relation de l'événement à la catégorie -->
+    <artechh:IsRelatedTo rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineEvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Bilal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Bilal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+		 <artechh:Tel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13579135</artechh:Tel>
+        <artechh:address>Nabeul</artechh:address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Boy_Bitten_by_a_Lizard_by_Michelangelo_Merisi_da_Caravaggio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Boy_Bitten_by_a_Lizard_by_Michelangelo_Merisi_da_Caravaggio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Burhan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Burhan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+		 <artechh:Tel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12345678</artechh:Tel>
+        <artechh:address>Bizerte</artechh:address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Claude_Monet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Claude_Monet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Darwish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Darwish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Dawoud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Dawoud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+		 <artechh:Tel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55135845</artechh:Tel>
+        <artechh:address>Tunis Centre Ville</artechh:address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Ebeid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Ebeid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+		 <artechh:Tel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98357187</artechh:Tel>
+        <artechh:address>Ariana</artechh:address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Essa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Essa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Eugene_Delacroix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Eugene_Delacroix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ExhibitionEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ExhibitionEvent">
+	
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventIsOrganizedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Fadel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Fadel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Faheem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Faheem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Faizan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Faizan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Farouq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Farouq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Fasil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Fasil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Free_Shipping_Promotion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Free_Shipping_Promotion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Gaddafi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Gaddafi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Georges_Seurat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Georges_Seurat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Jean-Antoine_Watteau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Jean-Antoine_Watteau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#John -->
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#John">
+    <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+    <artechh:IsClient rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineEvent"/>
+</owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Lady_Lilith_by_Dante_Gabriel_Rossetti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Lady_Lilith_by_Dante_Gabriel_Rossetti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Leonardo_da_Vinci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Leonardo_da_Vinci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Love_the_artist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Love_the_artist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtistReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Michelangelo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Michelangelo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#OnlineEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasAttendee"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Pablo_Picasso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Pablo_Picasso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+        <artechh:address>Italie</artechh:address>
+        <artechh:email>pablo@gmail.com</artechh:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Painting_Events -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Painting_Events">
+	
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+		
+		
+    </owl:NamedIndividual>
+    
+
+
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasComments"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post2"/>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+  <artechh:HasComments rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#love_the_painting"/>
+  <owl:sameAs rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comment1">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post2">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+  <artechh:HasComments rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comment1"/>
+</owl:NamedIndividual>
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post2 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Post2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProductType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasQuantity"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hasname"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hastitle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasPrice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasStock"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Produit2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Produit2 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Produit2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductAddedtoCart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductAddedtoCart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Produit2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Produit2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Rembrandt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Rembrandt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Saleh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Saleh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+        <artechh:Tel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12345678</artechh:Tel>
+        <artechh:address>Tunis Centre Ville</artechh:address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Same-Day_Shipping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Same-Day_Shipping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Self-Portrait_by_Albrecht_Dürer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Self-Portrait_by_Albrecht_Dürer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Standard_Shipping_for_Local_Orders -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Standard_Shipping_for_Local_Orders">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsRelatedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Starry_Night_by_Vincent_van_Gogh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Starry_Night_by_Vincent_van_Gogh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#The_Last_Supper_by_Leonardo_da_Vinci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#The_Last_Supper_by_Leonardo_da_Vinci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#The_Ninth_Wave_by_Ivan_Aivazovsky -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#The_Ninth_Wave_by_Ivan_Aivazovsky">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#The_Third_of_May_1808_by_Francisco_Goya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#The_Third_of_May_1808_by_Francisco_Goya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#The_Tower_of_Babel_by_Pieter_Brueghel_the_Elder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#The_Tower_of_Babel_by_Pieter_Brueghel_the_Elder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Vermeer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Vermeer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Water_Lilies_by_Claude_Monet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Water_Lilies_by_Claude_Monet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Woman_with_a_Parasol_by_Claude_Monet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Woman_with_a_Parasol_by_Claude_Monet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#YourOderIsShipped -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#YourOderIsShipped">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsShipped"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ahmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ahmed">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hasname"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#amine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#amine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#amir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#amir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#commande1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#commande1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#EventOrder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#commande2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#commande2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#EventOrder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasCategory"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event2 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#fraj -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#fraj">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#lamis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#lamis">
+      <artechh:IsClient rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#event2"/>
+</owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#louay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#louay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hasname"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#GalleryOwner"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#love_the_painting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#love_the_painting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#UnderAPost"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#nice_work"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#nice_work -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#nice_work"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#mahdi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#mahdi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#nice_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#nice_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasQuantity"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hastitle"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasPrice"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasStock"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order2 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#order2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#paintings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#paintings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasProductType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#sakura_tree -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#sakura_tree">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PurchaseOrder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#salah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#salah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hasname"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#DeliveryMan"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#samar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#samar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hasname"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#samir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#samir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#samira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#samira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Client"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#sculptures -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#sculptures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#siwar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#siwar">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Hasname"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#User"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#starred_night -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#starred_night">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PurchaseOrder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#starred_night_is_so_gorgeous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#starred_night_is_so_gorgeous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtworkReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#tableau_mona_lisa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#tableau_mona_lisa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PreOrder"/>
+    </owl:NamedIndividual>
+	
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#tableau_mona_lisa">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PreOrder"/>
+  <artechh:HasProduct rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product2"/>
+  
+</owl:NamedIndividual>
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#tableau_picasso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#tableau_picasso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PreOrder"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#tableau_picasso">
+  <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#PreOrder"/>
+  <artechh:HasProduct rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product1"/>
+</owl:NamedIndividual>
+
+    
+
+<owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#100dt_has__been_payed!">
+    <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Payment"/>
+    <artechh:HasOrder rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#tableau_mona_lisa"/>
+    
+    <!-- Enforce that the payment must have exactly one order -->
+    <rdf:type>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasOrder"/>
+            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        </owl:Restriction>
+    </rdf:type>
+</owl:NamedIndividual>
+
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#2stars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#2stars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#hasReviews"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#200dt_has__been_payed! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#200dt_has__been_payed!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Payment"/>
+		    <artechh:HasOrder rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#tableau_picasso"/>
+		
+   <!-- Enforce that the payment must have exactly one order -->
+    <rdf:type>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasOrder"/>
+            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        </owl:Restriction>
+    </rdf:type>
+</owl:NamedIndividual>
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#20dt_has_been_payed! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#20dt_has_been_payed!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Payment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#40dt_has__been_payed! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#40dt_has__been_payed!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Payment"/>
+		    <artechh:HasOrder rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ProductForPreOrder"/>
+  <!-- Enforce that the payment must have exactly one order -->
+    <rdf:type>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#HasOrder"/>
+            <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        </owl:Restriction>
+    </rdf:type>
+</owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#5stars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#5stars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#eventHasReview"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+   
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#davivinci_works_are_always_perfect! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#davivinci_works_are_always_perfect!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#ArtistReview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Order"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Posts"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Cart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Shipping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Category"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Comments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Notification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#Review"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsADeliveryMan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsClient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zeine/ontologies/2023/9/artechh#IsGalleryOwner"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
